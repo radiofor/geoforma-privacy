@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GeoForma ��˽���ߣ�����Ӱ������ģ����������Դ���ء�������������˽������">
+  <meta name="color-scheme" content="light">
+  <title>GeoForma ��˽����</title>
+  <style>
+    :root { --ink: #1d343e; --muted: #526872; --accent: #087c83; --line: #dce7e9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f3f7f7; color: var(--ink); font: 16px/1.9 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    .page { max-width: 940px; margin: 40px auto; padding: 0 24px; }
+    .brand { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; color: var(--accent); font-size: 19px; font-weight: 700; letter-spacing: .02em; }
+    .mark { width: 14px; height: 14px; background: var(--accent); border-radius: 3px; transform: rotate(45deg); }
+    article { background: white; border: 1px solid var(--line); border-radius: 16px; padding: 40px 48px; box-shadow: 0 12px 40px rgb(22 62 67 / 4%); }
+    header { padding-bottom: 24px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+    h1 { font-size: clamp(27px, 4vw, 36px); line-height: 1.35; margin: 0 0 16px; font-weight: 700; }
+    .meta { display: flex; flex-wrap: wrap; gap: 4px 20px; color: var(--muted); font-size: 14px; }
+    .summary { margin: 22px 0 0; }
+    h2 { font-size: 20px; line-height: 1.5; margin: 30px 0 12px; color: #175d66; }
+    p { margin: 0 0 15px; overflow-wrap: anywhere; }
+    a { color: #006f79; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #004e57; }
+    a:focus-visible { outline: 3px solid #71bac0; outline-offset: 3px; border-radius: 2px; }
+    code { padding: 2px 5px; background: #f0f5f6; border-radius: 4px; font-size: .92em; overflow-wrap: anywhere; }
+    footer { margin: 24px 2px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+    @media (max-width: 640px) { .page { margin: 22px auto; padding: 0 14px; } article { padding: 26px 22px; border-radius: 12px; } h2 { font-size: 19px; } }
+    @media print { body { background: white; } .page { max-width: none; margin: 0; padding: 0; } article { border: 0; box-shadow: none; padding: 0; } footer { display: none; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="brand"><span class="mark" aria-hidden="true"></span>GeoForma</div>
+    <article>
+      <header>
+        <h1>GeoForma ��˽����</h1>
+        <div class="meta"><span>��Ч���������ڣ�2026 �� 10 �� 26 ��</span><span>���ð汾��GeoForma 1.0.0</span><span>�����ߣ�Viktor Xu��GitHub��radiofor��</span></div>
+        <p class="summary">GeoForma ��һ���� Windows �����еĵ���Ӱ���ע���ߡ�������˵��������δ�����ѡ����ļ����ڱ������ɵ����ݣ��Լ���Դ���غͷ����������漰����Ϣ��</p>
+      </header>
+      <section aria-labelledby="local"><h2 id="local">1. �����ļ���ģ������</h2>
+        <p>GeoForma �������Ĳ�����ȡӰ�񡢲ο�Ӱ��VRT��YAML �嵥����Ŀ��ģ����Դ������Ӱ����ʾ����ʾ������ģ�������������༭���ǩ������</p>
+        <p>Ӱ�����ǩ���ܰ�������λ�á��ռ䷶Χ�������������ݣ���Ŀ�ļ�Ҳ���ܰ����ļ�·������ע����ʾ�㡢ģ�����ü�����״̬����Щ�����������豸�ϴ�����GeoForma �����Զ��������Ӱ�񡢱�ǩ����Ŀ�����������ϴ��������ߣ�Ҳ��ͨ���ƶ�������������Щ���ݡ�</p>
+        <p>GeoForma ������Ҫ����ע����¼Ӧ���˻������ر�ע���ܲ�������桢�û���Ϊͳ�ƻ��Զ�Զ�̱����ϱ���</p>
+      </section>
+      <section aria-labelledby="storage"><h2 id="storage">2. ���ر��桢��������־</h2>
+        <p>���������Ŀ�͵������д����ѡ���λ�á����������ڱ�������ģ��ƫ�á��ָ���¼��������Դ���������ѡ���棬�Լ������Ų���ϵ���־��</p>
+        <p>������ܰ�����Ӱ�����ɵ��������ݣ��ָ���¼����־���ܰ����ļ�·����ģ�ͻ��豸��Ϣ������״̬���쳣��Ϣ����Щ�ļ�Ĭ�ϱ����ڱ����������Զ����͸������ߡ�</p>
+        <p>��ͨ��װ��Ĭ������Ŀ¼Ϊ <code>%LOCALAPPDATA%/GeoForma</code>���̵갲װ��ʽ���Զ������ÿ���Ӱ��ʵ��λ�á������ڡ����� �� ��Դ���� �� ���� �� ����Դ�ļ��С��鿴��ԴĿ¼��</p>
+      </section>
+      <section aria-labelledby="network"><h2 id="network">3. �������������Դ</h2>
+        <p>�����û����������Դʱ��GeoForma ���Դ� PyTorch��Meta ���ṩ������ַ������������п��ģ��Ȩ�ء��������Ӳ��� HTTPS����Դ���û�˶��嵥�е��ļ���С�� SHA256����Ҳ����ֱ�ӵ������б����ļ���</p>
+        <p>��Դ�ṩ�����յ������������� IP ��ַ���������Դ·�����ͻ��������ʶ������������Χ��������Ϣ������־��¼�ͱ��淽ʽ����Ӧ�����ṩ��������GeoForma ���������Ӱ�񡢱�ǩ����Ŀ���������渽�ӵ���Щ��������</p>
+        <p>�û������򿪹ٷ���վ�������ⲿ����ʱ�����������������Ӧ�����ļ����á�����·���������ⲿ����Դ�ķ���Ҳȡ������ѡ������ݼ�����Դ�������߲�������Щ�������������˽����ʹ�ñ����������������п⡢Ȩ�ؾ������ú�ģ���������ڱ������߽��С�</p>
+      </section>
+      <section aria-labelledby="feedback"><h2 id="feedback">4. ��˽������ҳ�뷴��</h2>
+        <p>��������ҳͨ�� GitHub Pages �йܡ���ҳ����û������ͳ�ƽű�����桢�����������׷�ٴ��룻GitHub ��Ϊ�й��ṩ���Կ��ܴ���������ҳ����� IP ��ַ��������־����Ϣ����� <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub ��˽����</a>��</p>
+        <p>������ͨ�� <a href="https://github.com/radiofor/geoforma-privacy/issues">geoforma-privacy �ֿ�� Issues</a>��ϵ�����ߡ��ύ����ʱ��GitHub �ᴦ�������˺���Ϣ���������ṩ�����ݣ�������Ҳ�ῴ����Щ���ݣ��������ڴ�������������⡣</p>
+        <p>Issues �ǹ���ҳ�档���𹫿��ύ������Ϣ�����롢�����û�Ŀ¼������Ӱ���δ����������Ŀ����־������˽�¹�ͨ�����Ƚ������ȡ˽����ϵ��ʽ������</p>
+      </section>
+      <section aria-labelledby="control"><h2 id="control">5. �������ݵĹ���</h2>
+        <p>�����Ծ���������Щ�ļ�������򵼳���Щ����������б��ݡ�Ǩ�ƻ�ɾ���������ݡ������ṩ���ػ�������ѡ��������ػ��治����ɾ���Ѿ����õ����п⡢ģ��Ȩ�ػ��û���Ŀ��</p>
+        <p>ж������ͨ���ᱣ��ԭʼӰ����Ŀ���ָ���¼���������ص�ģ����Դ���Ƿ����������ͺ�ѡ����ȡ����ж��ѡ�ɾ�������ļ�ǰ����ȷ���ѱ�����Ҫ�����Ĺ�����</p>
+      </section>
+      <section aria-labelledby="services"><h2 id="services">6. ������ƽ̨�밲ȫ</h2>
+        <p>Microsoft Store �İ�װ���˻������¼�ƽ̨����� Microsoft �ķ����ϵͳ���ù��������� Microsoft �������˽����GitHub����Դ���ط������������ʵ���վҲ�ֱ���������˽����</p>
+        <p>GeoForma ����Դ����ʹ�� HTTPS ���嵥У�飬�������߲���ŵ���б����ļ����Ѽ��ܣ�Ҳ����֤�豸�������������԰�ȫ�������ƹ����豸����Ȩ�޼����ݡ�</p>
+      </section>
+      <section aria-labelledby="changes"><h2 id="changes">7. ���߸���</h2>
+        <p>������������ݴ�����ʽ�����仯�������߻���±����߲��޸�ҳ�����ڡ��������ݻ��ڱ�ҳ�漰�ֿ����ṩ��</p>
+      </section>
+      <section aria-labelledby="contact"><h2 id="contact">8. ��ϵ��ʽ</h2>
+        <p>��˽�������ύ����</p>
+        <p><a href="https://github.com/radiofor/geoforma-privacy/issues">https://github.com/radiofor/geoforma-privacy/issues</a></p>
+        <p>����ѭ�� 4 �ڹ��ڹ����������������ݵ�˵����</p>
+      </section>
+    </article>
+    <footer><span>GeoForma �� ���ص���Ӱ���ע</span><a href="https://github.com/radiofor/geoforma-privacy">��˽���ֿ߲�</a></footer>
+  </main>
+</body>
+</html>
